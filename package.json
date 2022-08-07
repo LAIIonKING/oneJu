@@ -1,0 +1,20 @@
+{
+  "name": "oneju",
+  "version": "1.0.0",
+  "description": "",
+  "main": "iljudata.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liieonking/oneJu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liieonking/oneJu/issues"
+  },
+  "homepage": "https://github.com/Liieonking/oneJu#readme",
+  "type": "module"
+}

@@ -1,3 +1,40 @@
+@font-face {
+  font-family: 'SDKukdetopokki-Lt';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ChosunGu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MYYeongnamnu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Chosunilbo_myungjo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ChosunCentennial';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Global */
 :root {
   /* Color */
@@ -26,35 +63,6 @@
 }
 
 /*Font*/
-@font-face {
-  font-family: 'SDKukdetopokki';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDKukdetopokki.woff')
-    format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SDKukdetopokki-Lt';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff')
-    format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ChosunGu';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff')
-    format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'MYYeongnamnu';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2')
-    format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
 
 h1 {
   font-family: 'SDKukdetopokki-Lt';
@@ -138,57 +146,74 @@ body {
 
 .ilju {
   background-color: var(--color-white);
-  padding: 40px 80px 60px;
-  width: 35%;
+  padding: 30px 40px 60px;
+  width: 350px;
   margin: auto;
   border-radius: 30px;
   text-align: center;
 }
 
 .ilju__first > h1 {
-  font-size: 50px;
+  font-family: 'SDKukdetopokki-Lt';
+  font-size: 30px;
   margin-top: 50px;
-  letter-spacing: 20px;
-}
-
-.ilju__first > p {
-  font-size: 15px;
-  margin: 70px 10% 50px;
   line-height: 40px;
 }
 
+.ilju__first > p {
+  font-family: 'ChosunGu';
+  font-size: 13px;
+  margin: 50px 10% 50px;
+  line-height: 30px;
+}
+
 .ilju__second > h1 {
-  font-size: 50px;
-  margin: 30px 0px 80px;
-  letter-spacing: 10px;
+  font-family: 'SDKukdetopokki-Lt';
+  font-size: 30px;
+  margin: 30px 0px 50px;
+}
+
+.ilju__second > h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: var(--color-borderblue);
+  font-family: 'MYYeongnamnu';
 }
 
 select {
   width: 150px;
   padding: 10px;
-  font-size: 20px;
-  margin-bottom: 50px;
+  font-size: 15px;
+}
+.select__box {
+  margin: auto;
+  position: relative;
+  width: 150px;
+  height: 35px;
+  border-radius: 4px;
+  border: 2px solid var(--color-borderblue);
+  margin-bottom: 30px;
 }
 
-.ilju__birth select::-webkit-scrollbar {
-  width: 10px;
-}
-
-.ilju__birth select::-webkit-scrollbar-thumb {
-  background-color: #411c1c;
-  border-radius: 3px;
-}
-
-.ilju__birth select::-webkit-scrollbar-track {
-  background-color: #ebe9e9;
-  border-radius: 6px;
+.select {
+  width: inherit;
+  height: inherit;
+  background: transparent;
+  border: 0 none;
+  outline: 0 none;
+  padding: 0 5px;
+  position: relative;
+  z-index: 3;
+  color: var(--color-grey);
+  font-family: 'ChosunGu';
+  font-size: 13px;
 }
 
 .ilju__birthFind {
   margin-top: 100px;
 }
 
-.result__1 > img {
+.result > img {
   width: 200px;
   margin: 20px 0px;
 }
@@ -197,7 +222,33 @@ select {
   display: flex;
   text-align: left;
   flex-direction: column;
-  margin-left: 25%;
+  margin-left: 30%;
+}
+
+.result__title > p {
+  font-family: 'ChosunCentennial';
+  margin-bottom: 3px;
+  font-size: var(--font-small);
+}
+
+.result__title > h2 {
+  font-family: 'Chosunilbo_myungjo';
+  letter-spacing: 13px;
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+
+.result > h3 {
+  font-family: 'MYYeongnamnu';
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.result > p {
+  font-family: 'ChosunGu';
+  line-height: 23px;
+  font-size: 13px;
+  margin-bottom: 50px;
 }
 
 .hide {
@@ -205,8 +256,8 @@ select {
 }
 
 button {
-  width: 300px;
-  height: 80px;
+  width: 200px;
+  height: 60px;
   font-size: 30px;
   background: linear-gradient(#5adeff, #5a9aff);
   border: 3px solid var(--color-white);
@@ -214,7 +265,7 @@ button {
   box-shadow: 5px 5px var(--color-darkblue);
   color: var(--color-white);
   font-family: 'SDKukdetopokki-Lt';
-  font-size: 35px;
+  font-size: 25px;
   letter-spacing: 10px;
 }
 
