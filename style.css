@@ -1,165 +1,228 @@
 /* Global */
 :root {
-    /* Color */
-    --color-white: #ffffff;
-    --color-black: black;
-    --color-lightblue: #5adeff;
-    --color-blue: #5a9aff;
-    --color-darkblue: #1c31ad;
-    --color-borderlightblue: #7ae7fd;
-    --color-borderblue: #5b81c0;
-    --color-grey: #4b4b4b;
+  /* Color */
+  --color-white: #ffffff;
+  --color-black: black;
+  --color-lightblue: #5adeff;
+  --color-blue: #5a9aff;
+  --color-darkblue: #1c31ad;
+  --color-borderlightblue: #7ae7fd;
+  --color-borderblue: #5b81c0;
+  --color-grey: #4b4b4b;
 
-    --color-red: #ff3f3f;
+  --color-red: #ff3f3f;
 
-    /* Font size */
-    --font-large: 48px;
-    --font-medium:28px;
-    --font-regular: 18px;
-    --font-small: 16px;
-    --font-micro: 14px;
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
 
-     /* Font wegit */
-    --weight-bold: 700;
-    --weight-semi-bold: 600;
-    --weight-regular: 400;
+  /* Font wegit */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
 }
 
 /*Font*/
 @font-face {
-    font-family: 'SDKukdetopokki';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDKukdetopokki.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'SDKukdetopokki';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SDKukdetopokki.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'SDKukdetopokki-Lt';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'SDKukdetopokki-Lt';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SDKukdetopokki-aLt00.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-    font-family: 'ChosunGu';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'ChosunGu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'MYYeongnamnu';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'MYYeongnamnu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
-h1{
-    font-family: 'SDKukdetopokki';
-    font-size: var(--font-large);
+h1 {
+  font-family: 'SDKukdetopokki-Lt';
+  font-size: var(--font-large);
 }
 
-h2{
-    font-family: 'SDKukdetopokki-Lt';
-    font-size: var(--font-medium);
+h2 {
+  font-family: 'SDKukdetopokki-Lt';
+  font-size: var(--font-medium);
 }
 
-h3{
-    font-family: 'MYYeongnamnu';
-    font-size: var(--font-regular);
+h3 {
+  font-family: 'MYYeongnamnu';
+  font-size: var(--font-regular);
 }
 
-p{
-    font-family: 'ChosunGu';
-    font-size: var(--font-small);
+p {
+  font-family: 'ChosunGu';
+  font-size: var(--font-small);
 }
 
-html{
-    width: 100%;
-    height: 100%;
+html {
+  width: 100%;
+  height: 100%;
 }
 
-body{
-    background-size: cover;
-    background: url(img/background\ image.png), linear-gradient(#a0ecff,#97beff);
-    background-blend-mode: multiply;
+body {
+  z-index: -1;
+  position: relative;
+  background-size: cover;
+  margin: 0;
 
-    margin: 0;
-    font-family:
+  background: url(img/background\ image.png);
+  background-color: #a0ecff;
+  background-blend-mode: multiply;
+
+  /* font-family:  */
 }
 
-.menubar__fix{
-    position: fixed;
-    background: url(img/menubar.png);
-    width: 100%;
-    height: 135px;
-    z-index: 1;
+.menubar__fix {
+  position: fixed;
+  background: url(img/menubar.png);
+  width: 100%;
+  height: 135px;
+  z-index: 1;
 }
 
-.menu{
-    height: 200px;
+.menu {
+  height: 200px;
 }
 
-.menubar__menu{
-    z-index: 3;
-    position: relative;
-    bottom: 540px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    height: 120px;
-    background: linear-gradient(#1c31ad,transparent)
+.menubar__menu {
+  z-index: 3;
+  position: relative;
+  bottom: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background: linear-gradient(#1c31ad, transparent);
 }
 
-.menubar__menu__item{
-    text-align: center;
-    width: 180px; 
-    height: 80px;
-    font-family: 'SDKukdetopokki-Lt';
-    font-size: 20px;
-    color: var(--color-white);
-    line-height: 100px;
+.menubar__menu__item {
+  text-align: center;
+  width: 180px;
+  height: 80px;
+  font-family: 'SDKukdetopokki-Lt';
+  font-size: 20px;
+  color: var(--color-white);
+  line-height: 100px;
 }
 
-.menubar__norige{
-    z-index: 2;
-    position:relative;
-    bottom: 100px;
-    display: flex;
-    justify-content: center;
-    margin-left: 500px;
+.menubar__norige {
+  z-index: 2;
+  position: relative;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  margin-left: 500px;
 }
 
-.ilju{
-    background-color: var(--color-white);
-    padding: 80px;
-    width: 50%;
-    margin: auto;
-    border-radius: 30px;
-    text-align: center;
+.ilju {
+  background-color: var(--color-white);
+  padding: 40px 80px 60px;
+  width: 35%;
+  margin: auto;
+  border-radius: 30px;
+  text-align: center;
 }
 
-.ilju-section{
-    height: 800px;
-}
-
-.ilju__first > h1{
-    font-size: 50px;
-    margin-top: 50px;
+.ilju__first > h1 {
+  font-size: 50px;
+  margin-top: 50px;
+  letter-spacing: 20px;
 }
 
 .ilju__first > p {
-    font-size: 30px;
-    margin-top: 100px;
-}
-.hide{
-    display: none;
+  font-size: 15px;
+  margin: 70px 10% 50px;
+  line-height: 40px;
 }
 
+.ilju__second > h1 {
+  font-size: 50px;
+  margin: 30px 0px 80px;
+  letter-spacing: 10px;
+}
 
-@media screen and (max-width: 768px){
-    .menubar__menu__item{
-    width:150px;
-    }
-    .ilju{
-        width: 55%;
-    }
+select {
+  width: 150px;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.ilju__birth select::-webkit-scrollbar {
+  width: 10px;
+}
+
+.ilju__birth select::-webkit-scrollbar-thumb {
+  background-color: #411c1c;
+  border-radius: 3px;
+}
+
+.ilju__birth select::-webkit-scrollbar-track {
+  background-color: #ebe9e9;
+  border-radius: 6px;
+}
+
+.ilju__birthFind {
+  margin-top: 100px;
+}
+
+.result__1 > img {
+  width: 200px;
+  margin: 20px 0px;
+}
+
+.result__title {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  margin: auto;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  width: 300px;
+  height: 80px;
+  font-size: 30px;
+  background: linear-gradient(#5adeff, #5a9aff);
+  border: 3px solid var(--color-white);
+  border-radius: 20px;
+  box-shadow: 5px 5px var(--color-darkblue);
+  color: var(--color-white);
+  font-family: 'SDKukdetopokki-Lt';
+  font-size: 35px;
+  letter-spacing: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menubar__menu__item {
+    width: 150px;
+  }
+  .ilju {
+    width: 45%;
+  }
 }

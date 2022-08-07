@@ -141,7 +141,7 @@
     </style>
 </head>
 
-<body>
+<body class="backColor">
 
     <!--Menubar-->
     <nav class="menubar">
@@ -160,31 +160,66 @@
     </nav>
 
     <!--Ilju-->
-    <section class="ilju">
+    <section class="ilju hide" id="iljuFirst">
         <div class="ilju-section">
             <div class="ilju__first">
                 <h1>일주란?</h1>
-                <p>십이간지와 십간을 더해 60가지의 갑자를 생년월일로 알수있다.
-                    본인의 타고난 성격을 알아보자!
+                <p>
+                    사주팔자중 태어난 하늘(일지)과 땅(일간)을 뜻하는 한자를 
+                    더하여 일주라 합니다<br>
+                    즉 일주는 사람이 태어난 날짜를 의미합니다<br>
+                    특정 일주에 태어난 사람들은 어떤 공통된 성향을 가지고있습니다<br>
+                    그 공통된 성향을 모아서 정리한것이 바로 일주론 입니다<br>
+                    십이간지와 십간을 더해 60가지의 갑자를 생년월일로 알수있습니다<br>
+                    본인의 타고난 성향을 알아보자!
+
                 </p>
             </div>
-            <div class="ilju__second hide">
+            <div class="ilju__button--find">
+                <button>일주찾기</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Second-->
+    <section class="ilju hide" id="iljuSecond">
+        <div class="ilju-secion__second">
+            <div class="ilju__second">
                 <h1>생년월일</h1>
                 <div class="ilju__birth">
-                    <select name="yy" id="year"></select>년
-                    <select name="mm" id="month"></select>월
-                    <select name="dd" id="day"></select>일
+                    <div>
+                    <select name="yy" id="year">
+                        <option disabled selected>출생 연도</option>
+                    </select>
+                    </div>
+                    <div>
+                    <select name="mm" id="month">
+                        <option disabled selected>월</option>
+                    </select>
+                    </div>
+                    <div>
+                    <select name="dd" id="day">
+                        <option disabled selected>일</option>
+                    </select>
+                    </div>
                 </div>
             </div>
-            <button class="ilju__find hide">일주찾기</button>
         </div>
+        <div class="ilju__button--birthFind">
+            <button>일주찾기</button>
+        </div>
+    </section>
 
-        <!--Result-->
+    <!--Result-->
+    <section class="ilju" id="iljuResult">
+        <div class="ilju-section__result">
         <div class="result">
-            <div class="result__1 hide">
+            <div class="result__1">
                 <img src="img/1.png">
-                <p>붉은 토끼</p>
-                <h2>정묘일주</h2>
+                <span class="result__title">
+                    <p>붉은 토끼</p>
+                    <h2>정묘일주</h2>
+                </span>
                 <h3>언행은 거칠지만 알고보면 스무스한 존재라구요!</h3>
                 <p>이 분들은 늘상 매사에 당돌한 맛이 있고, 순수하면서도,
                     남들에게 간섭도 잘하고 불평, 불만도 직설적으로
@@ -197,7 +232,7 @@
             </div>
 
 
-            <div class="result__share hide">
+            <div class="result__share">
                 <p>내 결과 공유하기</p>
                 <div class="result__icon">
                     <img src="img/icon/kakao.png" width="40px">
@@ -208,7 +243,9 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
+    <script src="javascript.js"></script>
 
 </body>
 
