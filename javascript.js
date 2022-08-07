@@ -50,3 +50,23 @@ birthDayEl.addEventListener('focus', function () {
         }
     }
 })
+
+// first 버튼을 누르면 second 화면으로 넘어가기
+const iljuButtonFind = document.querySelector('.ilju__button--find') //버튼
+const iljuButtonBirthFind = document.querySelector('.ilju__button--birthFind')
+const iljuFirst = document.querySelector('#iljuFirst') // first섹션
+const iljuSecond = document.querySelector('#iljuSecond')// second섹션
+
+iljuButtonFind.addEventListener("click", function () {
+    //first섹션 hide
+    iljuFirst.classList.add('hide');
+
+    //second섹션 hide 없애기
+    iljuSecond.classList.remove('hide');
+})
+
+
+// second 버튼을 누르면 result 화면으로 넘어가기
+
+
+// 

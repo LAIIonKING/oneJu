@@ -197,7 +197,7 @@ select {
   display: flex;
   text-align: left;
   flex-direction: column;
-  margin: auto;
+  margin-left: 25%;
 }
 
 .hide {
