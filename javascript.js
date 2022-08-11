@@ -117,6 +117,7 @@ iljuButtonBirthFind.addEventListener("click", function() {
     const iljuTwo = document.querySelector('.result__title > h2')
     const title = document.querySelector('.result > h3')
     const content = document.querySelector('.result > p')
+    const img = document.querySelector('.result > img')
 
     for(let i=0; i <=61; i++){
     if(data[i].id === dataIndex){
@@ -124,6 +125,7 @@ iljuButtonBirthFind.addEventListener("click", function() {
         iljuTwo.innerText = data[i].iljuTwo
         title.innerText = data[i].title
         content.innerText = data[i].content
+        img.setAttribute('src', data[i].img)
     }
 }
 })

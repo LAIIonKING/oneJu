@@ -249,6 +249,7 @@ select {
   line-height: 23px;
   font-size: 13px;
   margin-bottom: 50px;
+  text-align: left;
 }
 
 .hide {
