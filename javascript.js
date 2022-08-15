@@ -101,7 +101,7 @@ iljuButtonBirthFind.addEventListener("click", function() {
     
 //일간 숫자
     const ilGan = ilJuAllSum % 10;
-    //0=갑 1=을 2=병 3=정 4=무 5=기 6=경 7=신 9=임 9=계
+    //0=갑 1=을 2=병 3=정 4=무 5=기 6=경 7=신 8=임 9=계
 
 //일지 숫자
     const ilJi = ilJuAllSum % 12;
@@ -119,6 +119,37 @@ iljuButtonBirthFind.addEventListener("click", function() {
     const content = document.querySelector('.result > p')
     const img = document.querySelector('.result > img')
 
+// 일간 숫자, 그림 색상넣기 img, iljuOne, iljuTwo
+    // 0=갑 1=을 파랑
+    if(ilGan === 0 || ilGan === 1){
+        iljuOne.style.color = '#245fde'
+        iljuTwo.style.color = '#245fde'
+        img.style.filter = 'invert(27%) sepia(34%) saturate(4033%) hue-rotate(211deg) brightness(103%) contrast(94%)';
+    }
+    // 2=병 3=정 빨강
+    if(ilGan === 2 || ilGan === 3){
+        iljuOne.style.color = '#de5252'
+        iljuTwo.style.color = '#de5252'
+        img.style.filter = 'invert(60%) sepia(50%) saturate(5457%) hue-rotate(328deg) brightness(91%) contrast(90%)';
+    }
+    //4=무 5=기 황금
+    if(ilGan === 4 || ilGan === 5){
+        iljuOne.style.color = '#f5c21b'
+        iljuTwo.style.color = '#f5c21b'
+        img.style.filter = 'invert(82%) sepia(5%) saturate(3717%) hue-rotate(7deg) brightness(109%) contrast(103%)';
+    }
+    //6=경 7=신 하얀
+    if(ilGan === 6 || ilGan === 7){
+        iljuOne.style.color = '#cdcdcd'
+        iljuTwo.style.color = '#cdcdcd'
+        img.style.filter = 'invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%)';
+    }
+    //8=임 9=계 검정
+    if(ilGan === 8 || ilGan === 9){
+        img.style.filter = 'invert(17%) sepia(8%) saturate(19%) hue-rotate(358deg) brightness(97%) contrast(93%)';
+    }
+    
+
     for(let i=0; i <=61; i++){
     if(data[i].id === dataIndex){
         iljuOne.innerText = data[i].iljuOne
@@ -128,6 +159,10 @@ iljuButtonBirthFind.addEventListener("click", function() {
         img.setAttribute('src', data[i].img)
     }
 }
+
+
+
+
 })
 
 

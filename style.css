@@ -252,6 +252,10 @@ select {
   text-align: left;
 }
 
+.red {
+  color: var(--color-red);
+}
+
 .hide {
   display: none;
 }
