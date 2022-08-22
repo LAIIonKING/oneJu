@@ -159,17 +159,20 @@ iljuButtonBirthFind.addEventListener("click", function() {
         img.setAttribute('src', data[i].img)
     }
 }
-
-
-
-
 })
 
+//화면 캡쳐 기능
 
-//id가 00인 객체의 index를 알아내서
-//해당 객체의 정보를 불러오기
+const captureBtn = document.querySelector(".btn_download");
 
-
+captureBtn.addEventListener("click", function() {
+    html2canvas(document.querySelector("#iljuResult")).then(canvas => {
+        var el = document.createElement("a")
+        el.href = canvas.toDataURL("image/jpeg")
+        el.download = '이미지.jpg' //다운로드 할 파일명 설정
+        el.click()
+    });
+})
 
 
 

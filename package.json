@@ -16,5 +16,8 @@
     "url": "https://github.com/Liieonking/oneJu/issues"
   },
   "homepage": "https://github.com/Liieonking/oneJu#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "html2canvas": "^1.4.1"
+  }
 }
